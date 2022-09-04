@@ -1,13 +1,13 @@
 const getEvents = () => {
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
-            'X-RapidAPI-Key': '0db63607a1mshb7058632ce290c3p10e57ajsn0d36c557c666'
-        }
-    };
+    // const options = {
+    //     method: 'GET',
+    //     headers: {
+    //         'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
+    //         'X-RapidAPI-Key': '0db63607a1mshb7058632ce290c3p10e57ajsn0d36c557c666'
+    //     }
+    // };
 
-    const fetchCall = fetch('https://exercisedb.p.rapidapi.com/exercises', options)
+    const fetchCall = fetch('https://www.eventbriteapi.com/v3/users/me/?token=JXJB65RSJCRAKPWOM5QK', options)
         .then(response => {
             if (response.status === 404) {
                 throw new Error("404: Not Found")
