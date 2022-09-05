@@ -1,13 +1,15 @@
 import './App.css';
 import { Routes, Route, useNavigate } from 'react-router-dom'
-import { getEvents } from './apiCalls';
+import { getUser, getEvents, getAllEvents } from './apiCalls';
 import { useState, useEffect } from 'react'
 
 
 function App() {
 
 useEffect(() => {
+  getUser().then(data => console.log(data))
   getEvents().then(data => console.log(data))
+  getAllEvents().then(data => console.log(data))
 }, [])
 
 
