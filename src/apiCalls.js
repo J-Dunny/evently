@@ -57,31 +57,5 @@ const getAllEvents = () => {
     return fetchCall
 }
 
-// const getEvents = () => {
-// const encodedParams = new URLSearchParams();
-// encodedParams.append("apiKey", "<REQUIRED>");
-
-// const options = {
-// 	method: 'POST',
-// 	headers: {
-// 		'content-type': 'application/x-www-form-urlencoded',
-// 		'X-RapidAPI-Key': '0db63607a1mshb7058632ce290c3p10e57ajsn0d36c557c666',
-// 		'X-RapidAPI-Host': 'Ticketmasterstefan-skliarovV1.p.rapidapi.com'
-// 	},
-// 	body: encodedParams
-// };
-
-// const fetchCall = fetch('https://ticketmasterstefan-skliarovv1.p.rapidapi.com/searchEvents', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
-// return fetchCall
-// }
-
 export { getUser, getEvents, getAllEvents }
 
-
-
-// OAuth token: JXJB65RSJCRAKPWOM5QK
-// User ID: 157524127868
-// App key: KROZYOJLML6XYZDSJC
